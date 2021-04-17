@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="SuiteFirefox">
+    <listeners>
+        <listener class-name="com.globant.ListenerTest"></listener>
+    </listeners>
+    <parameter name="browser" value="firefox"></parameter>
+    <test name="DropDownTest">
+        <classes>
+            <class name="com.globant.DropDownTest"></class>
+        </classes>
+    </test>
+    <test name="MultiSelectTest">
+        <classes>
+            <class name="com.globant.MultiSelectTest"></class>
+        </classes>
+    </test>
+</suite>
